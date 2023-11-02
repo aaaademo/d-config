@@ -15,6 +15,8 @@ ThinkPHP:
   - "/webroot/decision/login"
 XXL-JOB:
   - "/xxl-job-admin/toLogin"
+  - "/xxl/"
+  - "/xxjjob/"
 GeoServer:
   - "/geoserver/web/"
 百度-UEditor:
@@ -24,3 +26,11 @@ GeoServer:
   - "/zentao/"
 phpMyAdmin:
   - "/phpmyadmin/"
+kingdee-Porject:
+ - "/appmonitor/"
+ - "/portal/"
+ - "/shr/"
+ - "/monitor/"
+天问物业ERP:
+ - "/HM/M_Main/frame/Login.aspx"
+ 
