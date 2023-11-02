@@ -434,6 +434,9 @@ Horos-product:
   - 'title="Horos Web Portal"'
 HikVision - Security Platform:
   - 'body="<!--警示提示处-->" || (body="<h1 class=\"logo\">安防综合管理平台</h1>" && ( body="杭州海康威视系统技术有限公司 版权所有" || body="serviceIP" ) )'
+  - 'body="综合安防管理平台" && body="portal"'
+  - body="nginxService/v1/download/InstallRootCert.exe"
+  - icon_hash="-808437027"
 Juniper-NetScreen Firewall:
   - 'banner="NetScreen-" || banner="-NetScreen" || banner="realm=\"NetScreen" || header="realm=\"NetScreen"'
 Exposure-Facebook-Access-Token:
@@ -1716,6 +1719,9 @@ Olympics - Student Management Information System:
   - 'title="奥蓝学生管理信息系统" && body="VCode.aspx"'
 ShowDoc:
   - 'title="ShowDoc"'
+  - icon_hash="1969934080"
+  - body="showdoc/server/index.php"
+  - body="你可以使用Showdoc来编写在线API文档"
 SAP-Memory-Pipes:
   - icon_hash="-266008933"
 Hadoop-Hue:
@@ -2996,6 +3002,8 @@ DrayTek-Vigor-2820n:
   - 'banner="550 Permission denied.(Too many user login!!!)" && banner="Permission denied.(Please check access control list)"'
 和信创天云桌面:
   - body="和信下一代云桌面"
+  - body="0;URL=/vesystem/index.php"
+  - 'body="/Public/Assest/img/logo.png" && icon_hash="-961678585"'
 TG-RE8500-AC-series-router:
   - 'banner="TG-NET RE8500-AC series router"'
 ZyXEL-USG60W:
@@ -3592,6 +3600,7 @@ SurgeFTP:
   - 'banner="SurgeFTP"'
 齐治科技-堡垒机:
   - body="//xfpverifyExec.jsp"
+  - body="/shterm/login"
 Netgear-ReadyNAS:
   - 'header="realm=\"ReadyNAS Admin" || banner="realm=\"ReadyNAS Admin" || title="NETGEAR ReadyNAS"'
 Catering card system:
@@ -5953,6 +5962,8 @@ Maipu-RM1800:
   - 'header="realm=\"RM1800" || banner="RM1800"'
 APACHE-Tapestry:
   - 'body="content=\"Tapestry Application Framework" || body="content=\"Apache Tapestry Framework"'
+  - body="tapestry5/require.js"
+  - icon_hash="820942821"
 Alcatel_Lucent-OS6900-X72:
   - 'body="<span>Device OS6900-X72"'
 Crestron-AM-100:
@@ -6178,6 +6189,8 @@ DELL-POWEREDGE-R540:
   - 'banner="PowerEdge-R540" || cert="PowerEdge-R540" || title="PowerEdge-R540"'
 Ji Datongyuan -Web-Connector:
   - 'title="吉大正元Web Connector" || body="location.href=''/cgi-bin/CGIProxy.exe?action=start'';"'
+吉大正元-身份认证网关:
+  - body="吉大正元-身份认证网关" && body="/jit_pnx_portal/"
 China Communication Service - Central SMSP SMS Business Platform:
   - 'body="/SMRC/resources/default/"'
 Guangzhou shared software - company products:
@@ -6385,6 +6398,7 @@ IBM-KVM switch:
   - 'body="src=\"/avct.js" && body="alt=\"IBM"'
 汇文软件-书目检索系统:
   - icon_hash="1805953451"
+  - body="./opac/presearch.php"
   - title="书目检索系统" && body="Jiangsu Huiwen Software Ltd. 江苏汇文软件有限公司"
   - 'body="<div class=\"header_opac_logo\">"'
 Small I Robot - Unified Management Platform:
@@ -9673,6 +9687,7 @@ APACHE-Axis2:
   - 'body="axis2-web/css/axis-style.css"'
   - title=="Axis 2 - Home"
   - status="200" && body="Validate" && body="Welcome" && body="Axis" && body="deployed" && body="installation" && body="Admin"
+  - body="axis2-admin"
 Synology-photo-station:
   - 'body="photo_new/syno_photo_main.js" || body="content=\"Photo Station 6\"" || (body!="content=\"service_not_available\"" && title="Photo Station 6") || (body="content=\"Photo Station" && body="content=\"album")'
 Huawei-video equipment:
@@ -9692,8 +9707,10 @@ Plesk-Obsidian:
   - '(body="class=\"sid-plesk\">" && body="<meta name=\"plesk-build\"" && body="define(''plesk-ui-library'', window.PleskUiLibrary)") || title="Plesk Obsidian"'
 TRENDnet-TV-NVR104:
   - 'banner="TV-NVR104" || header="realm=\"TV-NVR104"'
-Qi'an letter - website security testing:
+360网站卫士:
   - 'body="webscan.360.cn/status/pai/hash"'
+  - 'body="wzws-waf-cgi"'
+  - 'body="zhuji.360.cn/guard/firewall/stopattack.html"'
 libwww-perl-daemon:
   - 'header="Server: libwww-perl-daemon" || banner="Server: libwww-perl-daemon"'
 APC-TM502B:
@@ -10508,6 +10525,7 @@ uDraw:
   - title="uDraw - Draw with Friends"
 Tianrencin -Web application firewall:
   - 'title="天融信WEB应用防火墙" || (title="Web User Login" && body="EvPNG.fix(''div, ul, img, li, input''); //EvPNG.fix(''PNGid1, PNGid2'')")'
+  - body="/cgi/maincgi.cgi"
 cradlepoint-IBR650:
   - 'banner="Cradlepoint IBR650" || title="Login :: IBR650"'
 Emperor-P2P:
@@ -11040,6 +11058,8 @@ netentsec Technology - Intelligent Marketing Platform:
   - 'title="网康智能营销平台"'
 火绒安全-终端安全控制中心:
   - 'title="火绒终端安全控制中心" || banner="HuorongESS"'
+  - body="/deploy/installer.exe"
+  - icon_hash="1862210629"
 SpiderFlow:
   - title="SpiderFlow"
 Cathexis-WNVR1000-PC:
@@ -11098,6 +11118,8 @@ Huawei - Enterprise Agent Server:
   - body="down.download?FM_SYS_ID"
   - body="Dec.fineServletURL"
   - body="Powered by 帆软"
+  - body="ReportServer?op=fs"
+  - body="WebReport/login.html"
 Golden Will-State Federation:
   - '((header="Server: Gnway Web Server" || body="document.writeln(CompanyMail)") && body!="志高易联" && header!="couchdb" && header!="drupal") || (banner="Server: Gnway Web Server" && banner!="couchdb" && banner!="drupal")'
 Avaya-ERS-1624:
@@ -12981,6 +13003,7 @@ NETGEAR-DG834G:
   - 'header="realm=\"NETGEAR DG834G" || banner="realm=\"NETGEAR DG834G"'
 Anheng Information -Apt:
   - 'title="明御APT攻击"'
+  - body="/static/js/vendor_33e71ba16f0c13c1cafe.js"
 Epson-Network-Projector:
   - 'banner="Epson Network Projector"'
 Fedora-Default-Test-Page:
@@ -14693,6 +14716,7 @@ Alcatel_lucent - Enterprise Gateway:
   - 'body="欢迎登陆Alcatel-Lucent企业网关<p></p>请输入用户名和密码，3次出错将被锁定<p>" || (title="欢迎登陆网页配置界面" && body="Alcatel-Lucent")'
 Queen Stars - Tianzhu IDS:
   - 'title="天阗入侵检测" || (title="CyberSensor" && header="VSAppSrv1") || body="<div class=\"login_name\">天阗入侵检测与管理系统V7.0</div>"'
+  - body="/static/img/pages/apt/venus/cover_d.gif"
 pyLoad:
   - title="Login - pyLoad"
 phpSysInfo:
@@ -15212,6 +15236,7 @@ TurboMail:
   - 'body="Powered by TurboMail" || body="wzcon1 clearfix" || title="TurboMail邮件系统" || body="<a href=\"http://www.turbomail.org\">Powered by TurboMail</a>" || body="alt=\"TurboMail 电子邮件系统\"/>" || banner="TurboMail SMTP" || banner="TurboMail POP3 Service"'
 INSPUR- Government Affairs:
   - 'body="OnlineQuery/QueryList.aspx" || title="浪潮政务" || body="LangChao.ECGAP.OutPortal"'
+  - body="dzzw-icon-glyph icon-app"
 TG-RN5000-series-router:
   - 'banner="TG-NET RN5000  series router" || banner="TG-NET RN5000 series router"'
 AAKUAN - Attendance System:
@@ -15493,6 +15518,7 @@ MitraStar-Gateway:
   - 'banner="MitraStar Gateway"'
 启明星辰-天清汉马USG:
   - 'title="天清汉马USG" || (body="var hasloading = $changeYZM.is(\".item_code_loading\")" && body="span id=\"changeYZM\"")'
+  - body="天清汉马USG防火墙"
 TP-LINK-VR600:
   - 'banner="0.1.0 0.9.1 v0057.0 Build 160217 Rel.53237n"'
 TOTO_LINK-A1004:
@@ -15888,6 +15914,8 @@ Exposure-PGP-私钥块:
 DELL-N1108P-ON:
   - 'body="class=\"login_server_default\">N1108P-ON"'
 apereo-CAS:
+  - 'body="Apereo" && body="cas"'
+  - body="/cas/favicon.ico"
   - 'body="CAS &#8211; Central Authentication Service"'
 Fujitsu-iRMC:
   - 'header="realm=\"iRMC " || banner="realm=\"iRMC "'
@@ -16048,3 +16076,218 @@ Citadel-Servers:
   - '((header="webcit=" || body="Citadel Server - powered by" || body="/styles/webcit.css" || title="- Citadel Server" || body="<div class=\"boxlabel\">Citadel Server - powered by" || header="Server: WebCit") && body!="Server: couchdb") || (banner="Server: WebCit" && banner!="couchdb")'
 GT866-IAD:
   - 'banner="GT866_IAD"'
+360网神防火墙系统:
+  - 'body="/Public/resources/image/logo_panner.png" || body="360网神防火墙系统"'
+Tomcat后台:
+  - 'body="Apache Tomcat" && body="/manager/html" && header="200"'
+Logbase一朵云运维管理系统:
+  - body="/bhost/_getIcode"
+  - header="bhost"
+  - body="/manage/images/login-logo.png"
+博达站群服务器:
+  - icon_hash="366138570"
+  - body="login/tlogin/images/sitesPic.jpg"
+  - body="西安博达软件股份有限公司版权所有"
+金蝶天燕:
+  - body="金蝶天燕"
+  - body="Apusic"
+  - header="Apusic"
+Arcadyan-Routers:
+  - body="css/style-ad-JP.css"
+瑞成-OA:
+  - body="/public/forget/resetPassword.action"
+  - body="/public/login/doLoginOA_ajax.action"
+瑞成-办公应用管理后台:
+  - body="/risen/home/index.action"
+瑞成信息:
+  - body="risencn"
+  - body="瑞成信息技术"
+青藤云:
+  - 'body="local.pathname = 'next';" && icon_hash="1625842732"'
+长亭-谛听:
+  - body="D-Sensor"
+云学堂:
+  - body="yxtCustomerBtn"
+全国中等职业学校学生管理信息系统:
+  - body="<font color=\"#104E1A\" size=\"2px\">"
+学籍管理服务平台:
+  - body="学籍管理服务平台"
+  - body="skins/js/des.js"
+奥蓝学生管理信息系统:
+  - 'body="学生管理信息系统" && body="md5.js"'
+迪安数字病理远程会诊平台:
+  - body="K-RMCS.Web"
+知道创宇-创宇盾:
+  - body="创宇盾拦截"
+  - body="365cyd.com"
+致远:
+  - body="/mobile_portal/api/m3/core/server/service"
+  - body="Seeyon"
+CISCO-ASA思科防火墙:
+  - body="/netaccess/connstatus.html"
+梭子鱼邮件安全网关:
+  body="/css/emailswitch.css?v"
+  body="/cui/images/favicon.ico"
+天泰WEB应用防火墙:
+  - body="天泰WEB应用防火墙"
+腾亿天机防火墙:
+  - body="/index.php?m=home&c=login&a=reg"
+  - body="腾亿天机防火墙"
+上讯防火墙:
+  - body="上讯信息新一代防火墙"
+  - icon_hash="-50510729"
+上元信安防火墙:
+  - body="上元信安下一代防火墙"
+  - ico_hash="-50510729"
+H3C-Data网络流量分析一体机:
+  - body="H3CData网络流量分析一体机"
+迪普-VPN:
+  - body="/sslvpn/portals/pub/css/sslvpnLogin.css"
+北京益名互联信息-域管理系统:
+  - 'body=" <script>top.location.href='/Login.aspx';</script>" && icon_hash="1204392879"'
+帕拉迪-堡垒机:
+  - body="/Public/sheme/isoc/images/logo/favicon.ico"
+  - body="/Public/js/pfxCertList.js"
+epoint-eCloud:
+  - body="oneapm/login"
+国泰新点软件-epoint:
+  - 'header="EPTOKEN" && body="epoint"'
+  - body="国泰新点"
+epoint-Shiro:
+  - 'header="=deleteMe" && body="epoint"'
+  - 'header="rememberMe" && body="EPTOKEN"'
+  - body="TPPingBiao"
+  - body="TPBidder"
+  - body="epointserver"
+  - body="epoint-customerservice"
+  - body="EpointMallService"
+  - body="/pages/default/index"
+  - header="epoint-httpserver"
+  - header="epointserver"
+供应商-楚玖科技:
+  - body="qq313596790fh"
+品茗-公共资源交易中心:
+  - body="/Account/" && body="杭州品茗信息技术有限公司"
+佑友防火墙:
+  - body="margin-left:58px;font-size:16px;font-weight:bold;font-family:Microsoft YaHei;color:#000"
+  - body="佑友防火墙"
+天融信-入侵防御系统TopIDP:
+  - body="/site/image/loginbutton.png"
+  - body="天融信入侵防御系统TopIDP"
+K8S:
+  - body="system:anonymous"
+  - 'body="kind" && body="apiVersion" && body="metadata" && body="status" && body="message" && body="reason" && body="details" && body="code"'
+Kubenetes-APIServer:
+  - 'body="authorization.k8s.io" && body="apis"'
+VMware-ESXi:
+  - body="ID_EESX_Welcome"
+  - body="esxUiApp"
+  - icon_hash="45180380"
+  - 'body="ESXi" && body="vmware"'
+万户-ezEIP:
+  - 'body="wanhu" && body=".aspx"'
+  - 'body="万户" && body=".aspx"'
+大华-ICC-智能物联综合管理平台:
+  - 'body="客户端会小于80" && body="/static/logo_blue.ico"'
+微E-mobile-6.x:
+  - body="Weaver E-mobile"
+  - 'body="E-mobile" && body="Weaver"'
+  - body="E-mobile" && body="/verifyLogin.do"
+深信服-VDI:
+  - 'body="/por/login_psw.csp" && body="VDI"'
+思福迪-堡垒机:
+  - body="/bh/images/image.jpg"
+  - body="Logbase运维安全管理系统"
+K8S-ETCD:
+  - 'body="404 page not found" && icon_hash="557502803"'
+  - 'body="404 page not found" && icon_hash="2019124814"'
+海康威视-iVMS-A100:
+  - body="page_ajaxFindLines.action"
+  - 'body="MainFrame/Image/trigger-rtl.png" && body="MainFrame/Image/xianlu.png"'
+明源云ERP:
+  - icon_hash="-626335361"
+  - body="明源云ERP"
+  - body="sol.fdcyun.com/web/erp"
+山石网科-sg6000:
+  - body="background:#A9B6EA; padding-left:15px"
+supcon中控:
+  - 'body="supcon" && body="txtLoginUser"'
+WPS-部署可视化平台:
+  - body="WPS 部署可视化平台"
+  - body="/umi.86beda3f.js"
+  - body="/umi.823383e5.js"
+长亭科技-雷池:
+  - body="src=/api/CSRFTokenAPI"
+大华DSS-New:
+  - icon_hash="411052691"
+  - body="include/skin/white/images/qr.png"
+  - body="include/script/_common/pavoCommon.js"
+大华-车载监控平台:
+  - 'body="navigateToHttp" && body="/its"'
+jfinal-cms:
+  - body="/jflyfox/mtg/"
+EFAK-Kafka集群监控:
+  - body="Eagle For Apache Kafka"
+  - body="<h1>EFAK</h1>"
+TongWeb-Server:
+  - header="TongWeb Server"
+  - body="/console/images/logo_zh_CN.png"
+大华-DSS-TheNextWebApp:
+  - header="TheNextWebApp"
+  - body="/TheNextWebApp/views/static/"
+帆软报表系统-v10:
+  - body="cloud.fanruan.com"
+  - body="/webroot/decision/file?path="
+浪潮-容器管理平台-ClusterEngine:
+  - body="http://hpc.inspur.com"
+  - body="ClusterEngine V4.0"
+  - body="../../assets/images/logo/tscelogo.png"
+章管家:
+  - body="/resources/login_password/images/favicon.ico"
+  - body="章管家"
+中科网威堡垒机:
+  - body="中科网威4A运维堡垒机系统"
+  - body="Page_ViewPort_Main"
+金山终端安全系统:
+  - icon_hash="-304636125"
+  - icon_hash="1851662940"
+  - icon_hash="2067073160"
+  - body="毒霸终端安全系统"
+  - body="net.jinshan.console-release.apk"
+江民网络版杀毒软件:
+  - body="江民网络版杀毒软件"
+  - body="Jiangmin Antivirus"
+any800客服系统:
+  - body="UCC开启全渠道智慧互动"
+驰骋BPM:
+  - body="驰骋BPM"
+指掌易产品:
+  - header="ZZY_WEB"
+金万维-异速联:
+  - body="GNRemote.dll"
+thinkphp-bjyadmin:
+  - header="thinkphp-bjyadmin"
+  - body="thinkphp-bjyadmin"
+xxl-job-客户端:
+  - body="{\"code\":500,\"msg\":\"invalid request, HttpMethod not support.\"}"
+全指纹蜜罐:
+  - 'body="port = 5038" && body="pppoe_password"'
+  - 'body="root:x:0:0:root:/root:/bin/bash" && body="uShare,GeeXboX uShare : UPnP Media Server"'
+  - header="ASUSTeK UPnP/1.0 MiniUPnPd/1.4 AirTies/ASP 1.0 UPnP/1.0"
+合正软件-网站群内容管理系统:
+  - body="/cms/cms/infopub/"
+  - body="/cms/cmsadmin/infopub/"
+  - body="Produced By HLCMS 浩联网站群内容管理系统 内容管理专家[福州浩联电子技术有限公司] publishdate"
+  - body="Produced By CMS 网站群内容管理系统 publishdate"
+正奇晟业-满客宝智慧食堂:
+  - body="static/gh.ico"
+  - body="智慧食堂后台管理系统"
+  - body="满客宝"
+  - body="/mkb.ico"
+一脸通智慧管理平台:
+  - body="SystemMng.ashx"
+  - body="欢迎使用餐补管理系统"
+WeMeet:
+  - body="/static/css/main.db7da8a2.chunk.css"
+  - body="/static/js/70.accd25ff.chunk.js"
+  - body="/static/js/main.51b0eb70.chunk.js"

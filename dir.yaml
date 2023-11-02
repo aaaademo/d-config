@@ -16,7 +16,7 @@ ThinkPHP:
 XXL-JOB:
   - "/xxl-job-admin/toLogin"
   - "/xxl/"
-  - "/xxjjob/"
+  - "/xxl-job/"
 GeoServer:
   - "/geoserver/web/"
 百度-UEditor:
