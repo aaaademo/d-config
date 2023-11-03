@@ -6023,3 +6023,9 @@ Total.js:
     - root
   pocs:
     - CVE-2019-8903
+xxl-job-客户端:
+  type:
+    - root
+  pocs:
+    - xxl-job-executor-default-accessToken
+

