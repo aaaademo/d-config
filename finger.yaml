@@ -16291,3 +16291,5 @@ WeMeet:
   - body="/static/css/main.db7da8a2.chunk.css"
   - body="/static/js/70.accd25ff.chunk.js"
   - body="/static/js/main.51b0eb70.chunk.js"
+JeeSpringCloud:
+  - header="com.jeespring.session.id"
