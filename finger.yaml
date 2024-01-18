@@ -10523,6 +10523,7 @@ LINKEDCARE-E Watching Tooth Yunkou Mali Clinics Management System:
 明源云-ERP:
   - body="hibot.js"
   - body="f96699bbadafca894f3c1b7a"
+  - body="接口管家站点正常！"
   - title="明源云ERP"
   - body="window.location.replace('/_base/Home/Error/browser.html?enablemip=0');" && body="深圳市明源云科技有限公司"
 SMARTBI:

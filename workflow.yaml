@@ -905,6 +905,7 @@ Reprise-License-Manager:
     - root
   pocs:
     - mingyuan-erp-apiupdate-fileupload
+    - tags@mingyuanyun-ERP
 Alibaba-Sentinel:
   type:
     - root

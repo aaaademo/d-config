@@ -1,3 +1,6 @@
 # If you prefer the allow list template instead of the deny list, see community template:
 **/.DS_Store
+
 pocs/self
+
+subfinder-config.yaml
